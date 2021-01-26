@@ -1,0 +1,13 @@
+Galileo Galilei, the most influential scholar of astronomy who rightfully earned the moniker "The Father of Modern Science", once said that "Nature is relentless and unchangeable, and it is indifferent as to whether its hidden reasons and actions are understandable to man or not". He spent his life time making observations through his telescope to study the laws of motion of the heavens. But, the most profound achievement he made was that he published his findings in a number of books for any admirer if his work to get a glimpse of what it is like to be looking through his telescopic lens that he looked through. His progressive views costed him..................
+
+
+INGV - Volcanic Eruption Prediction
+Discover hidden precursors in geophysical data to help emergency response
+National Institute of Geophysics and Volcanology
+
+What if scientists could anticipate volcanic eruptions as they predict the weather? While determining rain or shine days in advance is more difficult, weather reports become more accurate on shorter time scales. A similar approach with volcanoes could make a big impact. Just one unforeseen eruption can result in tens of thousands of lives lost. If scientists could reliably predict when a volcano will next erupt, evacuations could be more timely and the damage mitigated.
+
+Currently, scientists often identify “time to eruption” by surveying volcanic tremors from seismic signals. In some volcanoes, this intensifies as volcanoes awaken and prepare to erupt. Unfortunately, patterns of seismicity are difficult to interpret. In very active volcanoes, current approaches predict eruptions some minutes in advance, but they usually fail at longer-term predictions.
+
+Enter Italy's Istituto Nazionale di Geofisica e Vulcanologia (INGV), with its focus on geophysics and volcanology. The INGV's main objective is to contribute to the understanding of the Earth's system while mitigating the associated risks. Tasked with the 24-hour monitoring of seismicity and active volcano activity across the country, the INGV seeks to find the earliest detectable precursors that provide information about the timing of future volcanic eruptions.
+
