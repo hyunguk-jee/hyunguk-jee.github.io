@@ -161,11 +161,11 @@
                         <div class="breadcaump-inner text-center">
                             <div class="breadcrumb-insite">
                                 <div class="header mb--40 text-center">
-                                    <h3 class="heading heading-h3 font-32 text-white">Predicting Time Left to Volcanic Eruption </h3>
-                                    <h3 class="heading heading-h3 font-32 text-white"> Volcano Etna, Sicily </h3>
-                                    <p style="font-size:200%;color:white">  Discover hidden precursors in geophysical data to help emergency response </p>
+                                    <h3 class="heading heading-h3 font-32 text-white"> Classifying Real Diaster Tweets </h3>
+                                    <h3 class="heading heading-h3 font-32 text-white"> I don't know </h3>
+                                    <p style="font-size:200%;color:white">  I don't know  </p>
                                     <div class="post-meta mt--20 text-white bk-hover align-items-center d-flex justify-content-center">
-                                        <div class="post-date"> January 18, 2021 </div>
+                                        <div class="post-date"> February 5 ,2021 </div>
                                         <div class="post-category"><a href="#">Portfolio</a></div>
                                     </div>
                                 </div>
@@ -188,13 +188,13 @@
                             <!-- Start Thumbnail -->
                             <div class="blog-modern-layout">
                                 <div class="thumbnail mb--60">
-                                    <img class="w-100" src="img\blog\big-img\volcano\volcano-etna.jpg">
-                                    <body> Mount Etna, Europe's largest active volcano, spewed bubbling lava and hot as into the Sicillian sky on January 18, 2021.&nbsp;
-
-                                    </body>
-                                  <br>
-                                  <body style="font-size:60%"> (Image: © Salvatore Allegra/Anadolu Agency via Getty Images)
-                                  Source: <a href="https://www.livescience.com/mount-etna-eruption.html"> livescience.com </a> </body>
+                                  <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                    <div style='width:auto;height:auto;margin-left: 25%;margin-right:25%;'><img src="img\blog\big-img\disaster-tweets\tweet_screenshot.png"> </div>
+                                    <body> The author explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid.
+                                      However, it’s less clear to a machine where this is an announcement of a real diaster or not.
+                                      <body style="font-size:60%">
+                                      < Source: <a href="https://twitter.com/AnyOtherAnnaK/status/629195955506708480"> kaggle.com > </a> </body>
+                                  </div>
                                 </div>
                             </div>
                             <!-- End Thumbnail -->
@@ -215,74 +215,56 @@
                                         <div class="inner">
                                           <h5 class="heading heading-h5 line-height-1-95 wow move-up">
                                                 <p>
-                                                  <img src="https://storage.googleapis.com/kaggle-organizations/3756/thumbnail.png?r=56" width="30" height="30">
-                                                  National Institute of Geophysics and Volcanology
+                                                  <i class="fab fa-twitter fa-lg"></i>
+                                                  Classifying Real Diaster Tweets using Natural Language Processing
                                                 </p>
                                           </h5>
 
                                             <div class="desc mt--45 mb--50">
                                                 <p class="bk_pra wow move-up">
-                                                  &emsp;What if scientists could anticipate volcanic eruptions as they predict the weather?
-                                                  While determining rain or shine days in advance is more difficult, weather reports become more
-                                                  accurate on shorter time scales. A similar approach with volcanoes could make a big impact.
-                                                  Just one unforeseen eruption can result in tens of thousands of lives lost. If scientists could reliably predict when
-                                                   a volcano will next erupt, evacuations could be more timely and the damage mitigated.
-                                                </p>
-
-                                                <p class="bk_pra wow move-up">
-                                                  &emsp;Currently, scientists often identify “time to eruption” by surveying volcanic tremors from seismic signals.
-                                                  In some volcanoes, this intensifies as volcanoes awaken and prepare to erupt. Unfortunately, patterns of seismicity
-                                                  are difficult to interpret. In very active volcanoes, current approaches predict eruptions some minutes in advance,
-                                                  but they usually fail at longer-term predictions.
+                                                  &emsp;Twitter has become an important communication channel in times of emergency.
+                                                  The ubiquitousness of smartphones enables people to announce an emergency they’re observing in real-time.
+                                                  Because of this, more agencies are interested in programatically monitoring Twitter (i.e. disaster relief
+                                                  organizations and news agencies).
                                                 </p>
                                                 <p class="bk_pra wow move-up">
-                                                  &emsp;Enter Italy's Istituto Nazionale di Geofisica e Vulcanologia (INGV), with its focus on geophysics
-                                                  and volcanology. The INGV's main objective is to contribute to the understanding of the Earth's system
-                                                  while mitigating the associated risks. Tasked with the 24-hour monitoring of seismicity and active volcano
-                                                  activity across the country, the INGV seeks to find the earliest detectable precursors that provide information
-                                                   about the timing of future volcanic eruptions.
+                                                  &emsp;But, it’s not always clear whether a person’s words are actually announcing a disaster.
+                                                    Twitter has become an important communication channel in times of emergency. The ubiquitousness of
+                                                    smartphones enables people to announce an emergency they’re observing in real-time. Because of this,
+                                                    more agencies are interested in programatically monitoring Twitter (i.e. disaster relief organizations and news agencies). But, it’s not always clear whether a person’s words are actually announcing a disaster. The author, in the example above, explicitly uses the word “ABLAZE” but means it metaphorically. This is clear to a human right away, especially with the visual aid. But it’s less clear to a machine.
                                                   </p>
                                                 <br>
                                                 <p class="bk_pra wow move-up">
                                                   Source:
-                                                  <a href="https://www.kaggle.com/c/predict-volcanic-eruptions-ingv-oe"> Kaggle </a>
+                                                  <a href="https://www.kaggle.com/c/nlp-getting-startede"> Kaggle</a>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="thumbnail wow move-up">
-                                            <img class="w-100" src="img\blog\big-img\volcano\sensors.png">
-                                                <body> Digital elevation model of Mount Etna with seismic stations used to locate volcanic tremor (black and white triangles) and LP events (black triangles),
-                                                tiltmeters (black dots), and gravimeters (black squares) used in this work. The inset in the top left corner shows the distribution of the four summit craters
-                                                (VOR, Voragine; BN, Bocca Nuova; SEC, Southeast Crater; NEC, Northeast Crater).
-
+                                            <img class="w-100" src="img\blog\big-img\disaster-tweets\wsj_chart.jpg">
+                                                <body> Researcher have found a direct correlation between
+                                                  the volume of Twitter activity in an area affected by Superstorm Sandy
+                                                  and the severity of damage suffered. This could help emergency personnel more
+                                                  efficiently serve residents in future disasters.
                                                 </body>
                                                 <br>
                                                 <body style="font-size:60%"> Source:
-                                                <a href="https://www.livescience.com/mount-etna-eruption.html"> Bonaccorso 2011 </a> </body>
+                                                <a href="https://www.wsj.com/articles/twitter-storms-can-help-gauge-damage-of-real-storms-and-disasters-study-says-1457722801"> The Wall Street Journal 2016 </a> </body>
                                         </div>
                                         <div class="desc mt--45">
                                           <h5 class="heading heading-h5 line-height-1-95 wow move-up">
                                               Data Description
                                           </h5>
-
-                                          <p class="bk_pra wow move-up">
-                                            &emsp;The researchers added that detecting volcanic eruptions before they happen is an important problem
-                                             that has historically proven to be a very difficult. They provided with readings from several seismic
-                                              sensors around a volcano and challenged to estimate how long it will be until the next eruption.
-                                               The provided data represents a classic signal processing setup that has resisted traditional methods. In
-                                               addition, they commented that identifying the exact sensors may be possible but would not be in the spirit of the
-                                               competition nor further the scientific objectives, and no more metadata or information that would be unavailable in a
-                                               real prediction context was provided.
-                                          </p>
-                                          <br>
                                           <br>
                                           <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                            <div style='width:auto;height:auto;margin-left: 25%;margin-right:25%;'><img src="img\blog\big-img\volcano\seismicwaves.png" > </div>
-                                            <body> Above image shows an example of seismogram plots of large earthquakes from stations around the world, displayed by distance from the earthquake.
+                                            <div style='width:auto;height:auto;margin-left: 25%;margin-right:25%;'><img src="img\blog\big-img\disaster-tweets\tweets_example1.png" > </div>
+                                            <br>
+                                            <div style='width:auto;height:auto;margin-left: 25%;margin-right:25%;'><img src="img\blog\big-img\disaster-tweets\tweets_classify_example.png" > </div>
+                                            <body> Above image shows an example of the differences between a tweet regarding an escalated situation and one that is not.
                                             </body>
                                             <br>
                                             <body style="font-size:60%"> Source:
-                                            <a href="https://www.iris.edu/hq/inclass/software-web-app/global_seismogram_viewer"> Incorporated Research Institutions for Seismology </a> </body>
+                                            <a href="https://www.dssgfellowship.org/2013/12/13/qcri-tapping-twitter-for-faster-disaster-relief/"> Data Science for Social Good Fellowship </a> </body>
                                           </div>
                                           <br>
                                           <br>
@@ -291,20 +273,23 @@
                                           </h5>
 
                                           <p class="bk_pra wow move-up">
-                                            &emsp;There are many observations that can be made when monitering volcanic activities. According to the United States Geological Survey,
-                                             a US government agency that runs the Volcano Hazard Program, "monitoring a volcano requires scientists to use a variety of techniques that
-                                             can hear and see activity inside a volcano" (Source: <a href="https://www.usgs.gov/natural-hazards/volcano-hazards/monitoring"> USGS.gov)</a> . One of
-                                             many ways to monitor the activity is seismicity, which is a technique to measure the tremor around specific locations around the earth's crust
-                                             in a period of time.
+                                            &emsp;The researchers at the Commonwealth Scientific and Industrial Research Organization in Melbourne, Australia have
+                                             found a correlation between an influx of tweets concentrated on an area and the severity of
+                                             the situation. The surge, explained by The Wall Street Journal, can be helpful to first
+                                             responders to assess the emergency during a disaster. In fact, researchers have found that the
+                                             online Twitter response to the 2012 superstorm Sandy was a drew clearer picture of the local damages than
+                                             federal emergency estimated. As social media now plays a major role in online communication, it is only natural
+                                              that scholars and practitioners accept Twitter as a key channel to gauge a situation more deeply and dynamically
+                                              compared to traditional channels.
                                           </p>
                                           <p class="bk_pra wow move-up">
-                                            &emsp;There are variety of sensor stations around Volcano Etna that measure the seismic activities of the epicenter, the tilt of the ground,
-                                            and the gravity anomilies around the site. The researchers do not mention specifically what the provided data entails. However, It is safe to assume
-                                            that the problem I am faced with this competition is around seismology, given that the data provided includes wide-range of frequency outputs of various
-                                            undisclosed sensors around the volcano in a time-series format. I also may be wrong about my assumptions, and it is not to say that all of the provided sensor data
-                                            are seismic readings. Furthermore, with my limited knowledge on volcanic seismology, I do not know why certain sensors produce different range of amplitudes and noise levels.
-                                            However, I can observe changes in sensor outputs as an eruption event is imminent. As the event gets closer in time, an increase of activities is observed from a station relatively
-                                            further away from the epicenter.
+                                            &emsp;Twitter gains alot of mentum on their platform because they promote human interaction and connectivity that is
+                                            publically available for anyone can share their minds in various types of media. The social media is hyper-efficent outlet to share
+                                            information between humans, in ways humans can understand each other, but it is a challange for machine to interprate for those who are
+                                            interested in monitoring and assessing a particular situation. With the datset that was provided by the host of this competition, I will be
+                                            attempting to classify disaster tweets from those that are not using a machine learning technique known as natural language processing. The information
+                                            provided is not specific to a particular diaster, timeframe or location. I will not be incorporating any other information other than what was provided,
+                                            which is strictly tweets in text format.
                                           </p>
                                           <br>
                                           <h5 class="heading heading-h5 line-height-1-95 wow move-up">
@@ -312,8 +297,9 @@
                                           </h5>
 
                                           <p class="bk_pra wow move-up">
-                                            &emsp;The goal for this study is to predict the time left until the next eruption of each seismic events
-                                            by training a statistical learning model using the historical data on seismic activities at the site of Volcano Etna.
+                                            &emsp;The goal for this study is to classify which tweets are about real
+                                             disasters and which one's are not by  training a statistical learning model using a dataset of tweets that
+                                              were hand classified.
                                           </p>
                                           <br>
                                           <h5 class="mb-0"  align="center">
@@ -321,7 +307,7 @@
                                           </h5>
                                           <br>
                                           <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                            <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\plot_tree.png" > </div>
+                                            <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster_tweets\plot_tree.png" > </div>
                                           </div>
 
                                           <br>
@@ -330,16 +316,7 @@
                                           </h5>
 
                                           <p class="bk_pra wow move-up">
-                                            &emsp;After analyzing the data carefully, I was able to make predictions each segment of seismic
-                                            events on the test set that was provided with an error deviation of 32.95 hours until the time of
-                                             eruption. By using a Random Forest Regressor method, I was able to determine that the interaction
-                                             between three sensors' activities have the most infleunce on the imminent eruption event, as seen in the
-                                             diagram above. More Specifically, the sensor with the most significant changes in outputs as an eruption was
-                                             imminent was Sensor 5. Almost all of the sensors increased in noise levels as the event was getting closer in
-                                             time. However, Sensor 5 have stayed almost to the same level, up until the last 5 minutes to the event,
-                                             which we can explore with a time-series chart along with a series of histograms. By training our machine
-                                             learning model with provided test data, I was able to predict the next volcanic eruption about 3-4 days prior.
-                                             No further data was provided for our prediction model.
+                                            &emsp; Write your conclusion
                                           </p>
 
                                         </div>
@@ -369,14 +346,13 @@
                                                           &SmallCircle; Define Data Path
                                                         </h5>
                                                         <br>
-                                                        <script src="https://gist.github.com/hyunguk-jee/0f83d6c6cc75e85a7d8088e2ba57184c.js"></script>
+                                                        <script src="https://gist.github.com/hyunguk-jee/760e7e0ea9e1e2000982ed7054e21253.js"></script>
                                                         <br>
                                                         <h5 class="mb-0">
                                                           &SmallCircle; Import Libraries
                                                         </h5>
                                                         <br>
-                                                        <script src="https://gist.github.com/hyunguk-jee/08cc57eedda53ed300bb59541baa96d1.js"></script>
-
+                                                        <script src="https://gist.github.com/hyunguk-jee/6a30304baed527e428fec671be3baef7.js"></script>
                                                       </div>
                                                   </div>
                                               </div>
@@ -393,13 +369,24 @@
 
                                                   <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExampl3">
                                                       <div class="card-body">
-                                                      <h5 class="mb-0">
-                                                        &SmallCircle; Define Custom Functions
-                                                      </h5>
-                                                      <br>
-                                                      <script src="https://gist.github.com/hyunguk-jee/d89c0592ce9f27895c837c1e2ea53544.js"></script>
-                                                          </div>
+                                                        <h5 class="mb-0">
+                                                          &SmallCircle; Define Regular Expression Functions
+                                                        </h5>
+                                                        <br>
+                                                        <script src="https://gist.github.com/hyunguk-jee/4bc097c57bc97fa1cb5b4ffb544935fb.js"></script>
+                                                      </div>
+
+                                                      <div class="card-body">
+                                                        <h5 class="mb-0">
+                                                          &SmallCircle; Define Word Manipulation Functions
+                                                        </h5>
+                                                        <br>
+                                                        <script src="https://gist.github.com/hyunguk-jee/2bed7b4e60989bd81ae27d81f09573a5.js"></script>
+                                                      </div>
                                                     </div>
+
+
+
                                                 </div>
 
                                                 <div class="card">
