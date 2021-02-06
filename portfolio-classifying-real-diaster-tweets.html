@@ -383,6 +383,25 @@
                                                         <br>
                                                         <script src="https://gist.github.com/hyunguk-jee/2bed7b4e60989bd81ae27d81f09573a5.js"></script>
                                                       </div>
+
+                                                      <div class="card-body">
+                                                        <h5 class="mb-0">
+                                                          &SmallCircle; Define Dictionary Search Functions
+                                                        </h5>
+                                                        <br>
+                                                        <script src="https://gist.github.com/hyunguk-jee/3c995de8de8e31501f943744c79fae03.js"></script>
+                                                      </div>
+
+                                                      <div class="card-body">
+                                                        <h5 class="mb-0">
+                                                          &SmallCircle; Define ML Model Functions
+                                                        </h5>
+                                                        <br>
+                                                        <script src="https://gist.github.com/hyunguk-jee/24093635c7c97843ce53e9065a53a0ad.js"></script>
+                                                      </div>
+
+
+
                                                     </div>
 
 
@@ -405,7 +424,7 @@
                                                             &SmallCircle; Define Plotting Functions
                                                           </h5>
                                                           <br>
-                                                          <script src="https://gist.github.com/hyunguk-jee/5336c772a75eaf2771b7fb2475555426.js"></script>
+                                                          <script src="https://gist.github.com/hyunguk-jee/1776047371ac6afeeb520466501a67ef.js"></script>
                                                         </div>
                                                       </div>
                                                   </div>
@@ -426,7 +445,7 @@
                                                             &SmallCircle; Perform Data Acquisition and Preparation
                                                           </h5>
                                                           <br>
-                                                              <script src="https://gist.github.com/hyunguk-jee/0b113e1d25555bafe675845409cd6887.js"></script>
+                                                              <script src="https://gist.github.com/hyunguk-jee/4d20b96e15c43fa3cb3d90e477aeff10.js"></script>
                                                           </div>
                                                         </div>
                                                     </div>
@@ -440,22 +459,27 @@
                                           1. Define DataFrames, Features and Target
                                       </h3>
                                       <p class="bk_pra wow move-up">
-                                        <span> <em> train.csv </em> Metadata for the train files.
-
-
+                                        <span> <em> Files </em> 
+                                          <li style="font-size:12px;"> <em> train.csv </em> : the training set </li>
+                                          <li style="font-size:12px;"> <em> test.csv </em> : the test set </li>
                                         </span>
-                                        <li style="font-size:12px;"> <em> segment_id </em> : ID code for the data segment. Matches the name of the associated data file. </li>
-                                        <li style="font-size:12px;"> <em> time_to_eruption </em> : The target value, the time until the next eruption. </li>
+                                      </p>
+
                                         <br>
-                                        <p class="bk_pra wow move-up">
-                                          &emsp;[train|test]/*.csv: the data files. Each file contains ten minutes of logs from ten different sensors arrayed around a volcano.
-                                            The readings have been normalized within each segment, in part to ensure that the readings fall within the range of int16 values.
-                                          </p>
-                                        <br>
+                                      <p class="bk_pra wow move-up">
+                                        <span> <em> Columns </em> 
+                                          <li style="font-size:12px;"> <em> id </em> : A unique identifier for each tweet </li>
+                                          <li style="font-size:12px;"> <em> text </em> : The text of the tweet </li>
+                                          <li style="font-size:12px;"> <em> location </em> : The location the tweet was sent from (may be blank) </li>
+                                          <li style="font-size:12px;"> <em> keyword </em> : A particular keyword from the tweet (may be blank) </li>
+                                          <li style="font-size:12px;"> <em> target </em> : in train.csv only, this denotes whether a tweet is about a real disaster (1) or not (0) </li>
+                                          </span>
+                                      </p>
+                                      <br>
                                         <h5 class="mb-0">
                                           &SmallCircle; Prepare DataFrame to Fit Our Model
                                         </h5>
-                                        <br>
+                                      <br>
 
 
                                       <script src="https://gist.github.com/hyunguk-jee/10954b5953eed390f7bbedc8bb98d605.js"></script>
