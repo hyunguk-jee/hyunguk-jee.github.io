@@ -303,11 +303,11 @@
                                             </p>
                                           <br>
                                             <h5 class="mb-0"  align="center">
-                                            Random Forest Regressor Model Diagram
+                                            Random Forest Classifier Model Diagram
                                             </h5>
                                           <br>
                                             <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                              <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
+                                              <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\plot_tree5.png" > </div>
                                             </div>
 
                                           <br>
@@ -415,10 +415,17 @@
                                                     <div id="collapse3" class="collapse" aria-labelledby="collapse3" data-parent="#accordionExampl3">
                                                         <div class="card-body">
                                                           <h5 class="mb-0">
-                                                            &SmallCircle; Define Plotting Functions
+                                                            &SmallCircle; Define Word Frequency Plotting Functions
                                                           </h5>
                                                           <br>
                                                           <script src="https://gist.github.com/hyunguk-jee/1776047371ac6afeeb520466501a67ef.js"></script>
+                                                          <br>
+
+                                                          <h5 class="mb-0">
+                                                            &SmallCircle; Define Model Validation Plotting Functions
+                                                          </h5>
+                                                          <br>
+                                                          <script src="https://gist.github.com/hyunguk-jee/6e8dacc6503dd0ec5898bb2dc1e991df.js"></script>
                                                         </div>
                                                       </div>
                                                   </div>
@@ -480,36 +487,86 @@
                                               </div>
                                               <div id="collapse5" class="collapse" aria-labelledby="collapse5" data-parent="#accordionExampl3">
                                                   <div class="card-body">
+                                                    <h3>Acuire Train Dataset and Transform DataFrame</h3>
+                                                    <h5 class="mb-0">
+                                                      &SmallCircle; Retrieve Original Sample Train DataFrame
+                                                    </h5>
+                                                      <br>
+                                                        <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                          <div style='width:auto;height:auto;'> <img src="img\blog\big-img\disaster-tweets\original_traindatadf.png" > </div>
+                                                        </div>
+                                                      <br>
 
                                                     <h5 class="mb-0">
-                                                      &SmallCircle; Retrieve Original Sample DataFrame
+                                                      &SmallCircle; Transform Categorical Features in Train DataFrame
                                                     </h5>
-                                                    <br>
-                                                    <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                      <div style='width:1060px;height:auto;'> <img src="img\blog\big-img\volcano\sampledf.png" > </div>
-                                                    </div>
-                                                    <br>
-                                                    <h5 class="mb-0">
-                                                      &SmallCircle; Transform Train DataFrame
-                                                    </h5>
-                                                    <br>
-                                                    <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                      <div style='width:1500px;height:auto;'> <img src="img\blog\big-img\volcano\train_data.png" > </div>
-                                                    </div>
-
-                                                    <br>
+                                                      <br>
+                                                        <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                          <div style='width:1802px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\transform_traindatadf1.png" > </div>
+                                                        </div>
+                                                      <br>
 
                                                     <h5 class="mb-0">
-                                                      &SmallCircle; Transform Test DataFrame
+                                                      &SmallCircle; Transform Categorical Features into Numerical Features in Train DataFrame
                                                     </h5>
-                                                    <br>
-                                                    <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                      <div style='width:1500px;height:auto;'><img src="img\blog\big-img\volcano\test_data.png" > </div>
-                                                    </div>
-                                                  </div>
+                                                      <br>
+                                                        <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                          <div style='width:1965px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\transform_traindatadf2.png" > </div>
+                                                        </div>
+                                                      <br>
+
+                                                    <h5 class="mb-0">
+                                                      &SmallCircle; Transform Categorical Features into Numerical Features as Readability Index in Train DataFrame
+                                                    </h5>
+                                                      <br>
+                                                        <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                          <div style='width:1686px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\transform_traindatadf3.png" > </div>
+                                                        </div>
+                                                      <br>
+
+                                                      <h3>Acuire Test Dataset and Transform DataFrame</h3>
+                                                      <h5 class="mb-0">
+                                                        &SmallCircle; Retrieve Original Sample Test DataFrame
+                                                      </h5>
+                                                        <br>
+                                                          <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                            <div style='width:auto;height:auto;'> <img src="img\blog\big-img\disaster-tweets\original_testdatadf.png" > </div>
+                                                          </div>
+                                                        <br>
+
+                                                      <h5 class="mb-0">
+                                                        &SmallCircle; Transform Categorical Features in Test DataFrame
+                                                      </h5>
+                                                        <br>
+                                                          <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                            <div style='width:1797px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\transform_testdatadf1.png" > </div>
+                                                          </div>
+                                                        <br>
+
+                                                      <h5 class="mb-0">
+                                                        &SmallCircle; Transform Categorical Features into Numerical Features in Test DataFrame
+                                                      </h5>
+                                                        <br>
+                                                          <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                            <div style='width:1965px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\transform_testdatadf2.png" > </div>
+                                                          </div>
+                                                        <br>
+
+                                                      <h5 class="mb-0">
+                                                        &SmallCircle; Transform Categorical Features into Numerical Features as Readability Index in Test DataFrame
+                                                      </h5>
+                                                        <br>
+                                                          <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                            <div style='width:1697px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\transform_testdatadf3.png" > </div>
+                                                          </div>
+                                                        <br>
+
+
+
                                                 </div>
                                               </div>
                                             </div>
+                                          </div>
                                         <br>
                                           <h5 class="mb-0">
                                             &SmallCircle; Prepare DataFrame to Fit Our Model
@@ -517,101 +574,160 @@
                                         <br>
                                           <script src="https://gist.github.com/hyunguk-jee/d3c15f974c0ed3c8f236556f316eaecc.js"></script>
                                         <br>
-                                      <h5 class="mb-0" align="center">
-                                        Feature Processing Flow Chart
-                                      </h5>
-                                        <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                            <div style='width:1200px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\disaster-tweets-eda-diagram.png" > </div>
-                                        </div>
-                                      <br>
-                                        <p class="bk_pra wow move-up">
-                                          &emsp;The dataset breaks down the tweet into several key components such as the location
-                                           where it was tweeted, a particular keyword that is highlighted, and a classification whether
-                                           the content is regarding an emergency situation. Before we proceed with exploring the data, we
-                                            need to be knowledgable about the basic anatomy of tweets. A typical tweet might contain information
-                                            on whether it has been re-posted from another user known as re-tweeting or RT, a call for an attention
-                                            to another user known as mention or at sign followed by an user id (@  user id), a call for an attention
-                                            using a relevent keyword or phrase to be easily searched known as hashtag or hash sign followed by a keyword
-                                             (# keyword), and an option to add geographical information metadata known as geotagging or location tagging.
-                                             In addition to these building blocks, users can take advantage of various forms of media such as a hyperlink, photos,
-                                              and videos. For this study, however, we are only going to work with elements with texts. As shown above, I have broken
-                                               down each tweets into its different anatomical elements.
-                                        </p>
-                                       <br>
-                                             <div class="bk-accordion-style--2" id="accordionExampl3">
-                                                 <div class="card">
-                                                     <div class="card-header" id="heading6">
-                                                         <h5 class="mb-0">
-                                                             <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse6"
-                                                                 aria-expanded="false" aria-controls="collapse6">
-                                                                 View DataFrame
-                                                             </a>
-                                                         </h5>
+                                        <h5 class="mb-0" align="center">
+                                          Feature Processing Flow Chart
+                                        </h5>
+                                          <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                              <div style='width:1200px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\disaster-tweets-eda-diagram.jpg" > </div>
+                                              Swipe <i class="fas fa-arrow-right"></i>
+                                          </div>
+                                          <br>
+                                          <p class="bk_pra wow move-up">
+                                            &emsp;The dataset breaks down the tweet into several key components such as the location
+                                             where it was tweeted, a particular keyword that is highlighted, and a classification whether
+                                             the content is regarding an emergency situation. Before we proceed with exploring the data, we
+                                              need to be knowledgable about the basic anatomy of tweets. A typical tweet might contain information
+                                              on whether it has been re-posted from another user known as re-tweeting or RT, a call for an attention
+                                              to another user known as mention or at sign followed by an user id (@  user id), a call for an attention
+                                              using a relevent keyword or phrase to be easily searched known as hashtag or hash sign followed by a keyword
+                                               (# keyword), and an option to add geographical information metadata known as geotagging or location tagging.
+                                               In addition to these building blocks, users can take advantage of various forms of media such as a hyperlink, photos,
+                                                and videos. For this study, however, we are only going to work with elements with texts. As shown above, I have broken
+                                                 down each tweets into its different anatomical elements.
+                                          </p>
+                                          <br>
+                                          <h5 class="mb-0">
+                                            &SmallCircle; Word Freqeuncy Distributions by Target Value
+                                          </h5>
+                                        <br>
+                                       <div class="bk-accordion-style--2" id="accordionExampl3">
+                                           <div class="card">
+                                               <div class="card-header" id="heading6">
+                                                   <h5 class="mb-0">
+                                                       <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse6"
+                                                           aria-expanded="false" aria-controls="collapse6">
+                                                           View DataFrame
+                                                       </a>
+                                                   </h5>
+                                               </div>
+
+                                               <div id="collapse6" class="collapse" aria-labelledby="collapse6" data-parent="#accordionExampl3">
+                                                   <div class="card-body">
+
+                                                     <h5 class="mb-0">
+                                                       &SmallCircle; Word Frequency Distribution DataFrame
+                                                     </h5>
+                                                        <br>
+                                                     <script src="https://gist.github.com/hyunguk-jee/2676115989902b20a2e9524012c7887b.js"></script>
+                                                        <br>
+                                                     <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                       <div style='width:1080px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\feature_score_words.png" > </div>
                                                      </div>
+                                                        <br>
 
-                                                     <div id="collapse6" class="collapse" aria-labelledby="collapse6" data-parent="#accordionExampl3">
-                                                         <div class="card-body">
+                                                     <h5 class="mb-0">
+                                                       &SmallCircle; Hashtag Frequency Distribution DataFrame
+                                                     </h5>
+                                                        <br>
+                                                     <script src="https://gist.github.com/hyunguk-jee/b6c1b6a51ef24ec24005218995ac3aca.js"></script>
+                                                        <br>
+                                                     <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                       <div style='width:1087px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\feature_score_hashtag.png" > </div>
+                                                     </div>
+                                                        <br>
 
-                                                           <h5 class="mb-0">
-                                                             &SmallCircle; Word Frequency Distribution DataFrame
-                                                           </h5>
-                                                              <br>
-                                                           <script src="https://gist.github.com/hyunguk-jee/2676115989902b20a2e9524012c7887b.js"></script>
-                                                              <br>
-                                                           <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                             <div style='width:1080px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\feature_score_words.png" > </div>
-                                                           </div>
-                                                              <br>
-
-                                                           <h5 class="mb-0">
-                                                             &SmallCircle; Hashtag Frequency Distribution DataFrame
-                                                           </h5>
-                                                              <br>
-                                                           <script src="https://gist.github.com/hyunguk-jee/b6c1b6a51ef24ec24005218995ac3aca.js"></script>
-                                                              <br>
-                                                           <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                             <div style='width:1087px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\feature_score_hashtag.png" > </div>
-                                                           </div>
-                                                              <br>
-
-                                                           <h5 class="mb-0">
-                                                             &SmallCircle; Mention Freqeucny Distribution DataFrame
-                                                           </h5>
-                                                              <br>
-                                                           <script src="https://gist.github.com/hyunguk-jee/940e87b0f77715949769e087ae9aae6a.js"></script>
-                                                              <br>
-                                                           <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                             <div style='width:1134px;height:auto;'><img src="img\blog\big-img\disaster-tweets\feature_score_mention.png" > </div>
-                                                           </div>
-                                                         </div>
-                                                    </div>
-                                                 </div>
-                                             </div>
-                                       <br>
-                                         <h5 class="mb-0">
-                                           &SmallCircle; Word Freqeuncy Distribution by Target Value
-                                         </h5>
-                                         <br>
-                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                           <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
-                                         </div>
-                                       <br>
-                                         <h5 class="mb-0">
-                                           &SmallCircle; Hashtag Freqeuncy Distribution by Target Value
-                                         </h5>
-                                         <br>
-                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                           <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
-                                         </div>
-                                       <br>
-                                         <h5 class="mb-0">
-                                           &SmallCircle; Mention Freqeuncy Distribution by Target Value
-                                         </h5>
-                                       <br>
-                                           <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                             <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
+                                                     <h5 class="mb-0">
+                                                       &SmallCircle; Mention Freqeucny Distribution DataFrame
+                                                     </h5>
+                                                        <br>
+                                                     <script src="https://gist.github.com/hyunguk-jee/940e87b0f77715949769e087ae9aae6a.js"></script>
+                                                        <br>
+                                                     <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
+                                                       <div style='width:1134px;height:auto;'><img src="img\blog\big-img\disaster-tweets\feature_score_mention.png" > </div>
+                                                     </div>
+                                                   </div>
+                                              </div>
                                            </div>
+                                       </div>
+                                       <h5 class="mb-0" align="center">
+                                          Feature Freqeuncy Scatterplots
+                                       </h5>
+
+                                       <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;white-space: nowrap;scroll-snap-type: x mandatory;'>
+                                         Swipe <i class="fas fa-arrow-right"></i>
+                                         <div style='width:auto;height:auto;'>
+                                           <div style="display: inline-block;scroll-snap-align: center;"> <img src="img\blog\big-img\disaster-tweets\tc_score_word.png"> </div>
+                                           <div style="display: inline-block;scroll-snap-align: center;"> <img src="img\blog\big-img\disaster-tweets\tc_score_word.png"> </div>
+                                           <div style="display: inline-block;scroll-snap-align: center;"> <img src="img\blog\big-img\disaster-tweets\tc_score_word.png"> </div>
+                                         </div>
+                                       </div>
                                        <br>
+                                       <div class="bk-accordion-style--2" id="accordionExampl3">
+                                           <div class="card">
+                                               <div class="card-header" id="heading7">
+                                                   <h5 class="mb-0">
+                                                       <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse7"
+                                                           aria-expanded="false" aria-controls="collapse7">
+                                                           View Interactive Scatterplots
+                                                       </a>
+                                                   </h5>
+                                               </div>
+
+                                               <div id="collapse7" class="collapse" aria-labelledby="collapse7" data-parent="#accordionExampl3">
+                                                   <div class="card-body">
+
+                                                     <h5 class="mb-0">
+                                                       &SmallCircle; Interactive Target Confidence Scatter Plot on Word Frequency
+                                                     </h5>
+                                                        <br>
+                                                    <script src="https://gist.github.com/hyunguk-jee/2f35cb8de28dd4fbe2b983dc586a10a7.js"></script>
+                                                    <br>
+                                                      <a href="img\blog\big-img\disaster-tweets\Hashtag_tc_score.html", target="_blank">
+                                                        <p align='center'> Click Here to View Interactive Target Confidence Scatter Plot on Word Frequency </p>
+                                                      </a>
+                                                    <br>
+                                                      <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                        <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\tc_score_word.png" > </div>
+                                                      </div>
+                                                    <br>
+                                                    <br>
+
+                                                    <h5 class="mb-0">
+                                                      &SmallCircle; Interactive Target Confidence Scatter Plot on Hashtag Frequency
+                                                    </h5>
+                                                       <br>
+                                                    <script src="https://gist.github.com/hyunguk-jee/946620a8bd20c35bc7e2fd5f73798384.js"></script>
+                                                    <br>
+                                                       <a href="img\blog\big-img\disaster-tweets\Hashtag_tc_score.html", target="_blank">
+                                                         <p align='center'> Click Here to View Interactive Target Confidence Scatter Plot on Hashtag Frequency </p>
+                                                       </a>
+                                                    <br>
+                                                    <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                    <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\tc_score_hashtag.png" > </div>
+                                                    </div>
+                                                   <br>
+                                                   <br>
+
+                                                     <h5 class="mb-0">
+                                                       &SmallCircle; Interactive Target Confidence Scatter Plot on Mention Frequency
+                                                     </h5>
+                                                        <br>
+                                                    <script src="https://gist.github.com/hyunguk-jee/497ec36666a152360449cf20252e4c41.js"></script>
+                                                    <br>
+                                                      <a href="img\blog\big-img\disaster-tweets\Hashtag_tc_score.html", target="_blank">
+                                                        <p align='center'> Click Here to View Interactive Target Confidence Scatter Plot on Mention Frequency </p>
+                                                      </a>
+                                                    <br>
+                                                      <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                        <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\tc_score_mention.png" > </div>
+                                                      </div>
+                                                    <br>
+                                                    <br>
+
+                                                   </div>
+                                              </div>
+                                           </div>
+                                       </div>
                                            <p class="bk_pra wow move-up">
                                            &emsp;Our exploratory data analysis begins with understanding the difference in the frequeny of words or phrases between
                                            tweets regarding real disaster versus those that are not. In my personal experience with Twitter, the validity of the information
@@ -625,31 +741,72 @@
                                               the word 'like' is 394 times. Only 25% of the time the word was tweeted was not during a dire situation. We can also explore this idea further down with the frequency of
                                               other elements such as hashtags and mentions.
                                            </p>
+                                           <br>
+                                           <div class="bk-accordion-style--2" id="accordionExampl3">
+                                               <div class="card">
+                                                   <div class="card-header" id="heading8">
+                                                       <h5 class="mb-0">
+                                                           <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse8"
+                                                               aria-expanded="false" aria-controls="collapse8">
+                                                               View Brief Introduction to Readability Index
+                                                           </a>
+                                                       </h5>
+                                                   </div>
+
+                                                   <div id="collapse8" class="collapse" aria-labelledby="collapse8" data-parent="#accordionExampl3">
+                                                       <div class="card-body">
+
+                                                         <h5 class="mb-0">
+                                                           &SmallCircle; Introduction to Flesch  Readability Index
+                                                         </h5>
+                                                           <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                             <div style='width:100%;height:auto;'><img src="img\blog\big-img\disaster-tweets\flesch_score.png" > </div>
+                                                             < Source: <a href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests#Flesch_reading_ease"> Wikipedia > </a>
+                                                           </div>
+                                                        <br>
+
+                                                        <h5 class="mb-0">
+                                                          &SmallCircle; Introduction to Gunning-Fog Readability Index
+                                                        </h5>
+                                                          <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                            <div style='width:100%;height:auto;'><img src="img\blog\big-img\disaster-tweets\gunning-fog.png" > </div>
+                                                            <div style='width:100%;height:auto;'><img src="img\blog\big-img\disaster-tweets\gunning-fog1.png" > </div>
+                                                            < Source: <a href="https://en.wikipedia.org/wiki/Gunning_fog_index"> Wikipedia > </a>
+                                                          </div>
+                                                       <br>
+
+                                                       <h5 class="mb-0">
+                                                         &SmallCircle; Introduction to Automated Readability Index
+                                                       </h5>
+                                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                                           <div style='width:100%;height:auto;'><img src="img\blog\big-img\disaster-tweets\automated-read-index.png" > </div>
+                                                           <div style='width:100%;height:auto;'><img src="img\blog\big-img\disaster-tweets\automated-read-index2.png" > </div>
+                                                           < Source: <a href="https://en.m.wikipedia.org/wiki/Automated_readability_index"> Wikipedia > </a>
+                                                         </div>
+                                                    </div>
+                                                  </div>
+                                               </div>
+                                           </div>
+                                          <br>
+                                          <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
+                                            <div style='width:100%;height:auto;'><img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
+                                          </div>
                                         <br>
                                             <h3 class="heading heading-h5 line-height-1-95 wow move-up">
                                             2. Perform Manual Parameter Tuning for Better Model Fit
                                             </h3>
                                         <br>
-                                            <p class="bk_pra wow move-up">
-                                            &emsp;The model I am going to use for this prediction model is Random Forest Regressor from Scikit-Learn.
-                                            A random forest algorithm's varsatility is very impressive and handles bias and variance very well. However,
-                                            I have to be very careful not to overfit the training data, which happens quite often. So, my solution is
-                                            to perform a very broad range of parameters that vary the predictive accuracy the most to get an idea where the
-                                            model underfits and overfits. That way, I only have small and desirable of range of parameters to calculate the
-                                            cross-validation scores, and fit the best estimator.
-                                            </p>
-                                        <br>
                                             <div class="bk-accordion-style--2" id="accordionExampl3">
                                                 <div class="card">
-                                                    <div class="card-header" id="heading7">
+                                                    <div class="card-header" id="heading9">
                                                         <h5 class="mb-0">
-                                                            <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse7"
-                                                                aria-expanded="false" aria-controls="collapse7">
+                                                            <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse9"
+                                                                aria-expanded="false" aria-controls="collapse9">
                                                                 Define Preprocessing Transformer, Pipeline and Model Parameters for Better Fit
                                                             </a>
                                                         </h5>
                                                     </div>
-                                                <div id="collapse7" class="collapse" aria-labelledby="collapse7" data-parent="#accordionExampl3">
+                                                <div id="collapse9" class="collapse" aria-labelledby="collapse9" data-parent="#accordionExampl3">
                                                     <div class="card-body">
 
                                                       <h5 class="mb-0">
@@ -667,68 +824,75 @@
                                                </div>
                                              </div>
                                            </div/>
-
-                                      <br>
+                                           <br>
+                                               <p class="bk_pra wow move-up">
+                                               &emsp;The model I am going to use for this prediction model is Random Forest Regressor from Scikit-Learn.
+                                               A random forest algorithm's varsatility is very impressive and handles bias and variance very well. However,
+                                               I have to be very careful not to overfit the training data, which happens quite often. So, my solution is
+                                               to perform a very broad range of parameters that vary the predictive accuracy the most to get an idea where the
+                                               model underfits and overfits. That way, I only have small and desirable of range of parameters to calculate the
+                                               cross-validation scores, and fit the best estimator.
+                                             </p>
+                                          <br>
                                       <h5 class="mb-0">
                                         &SmallCircle; Determine Fit Performance Metric and Perform Manual Parameter Tuning for Better Fit
                                       </h5>
                                       <br>
                                       <script src="https://gist.github.com/hyunguk-jee/08ad9ff4bf352c680a594c6dc9d63358.js"></script>
                                       <br>
-
                                       <div class="bk-accordion-style--2" id="accordionExampl3">
                                           <div class="card">
-                                              <div class="card-header" id="heading8">
+                                              <div class="card-header" id="heading10">
                                                   <h5 class="mb-0">
-                                                      <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse8"
-                                                          aria-expanded="false" aria-controls="collapse8">
+                                                      <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse10"
+                                                          aria-expanded="false" aria-controls="collapse10">
                                                           View DataFrame
                                                       </a>
                                                   </h5>
                                               </div>
 
-                                              <div id="collapse8" class="collapse" aria-labelledby="collapse8" data-parent="#accordionExampl3">
+                                              <div id="collapse10" class="collapse" aria-labelledby="collapse10" data-parent="#accordionExampl3">
                                                   <div class="card-body">
 
                                                     <h5 class="mb-0">
-                                                      &SmallCircle; Determine Fit Performance with RMSE DataFrame For Better Fit
+                                                      &SmallCircle; Determine Fit Performance with Accuracy Score DataFrame For Better Fit
                                                     </h5>
                                                     <br>
                                                     <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                                      <div style='width:auto;height:auto;'> <img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
+                                                      <div style='width:auto;height:auto;'> <img src="img\blog\big-img\disaster-tweets\manual-gridsearch.png" > </div>
                                                     </div>
                                                   </div>
                                              </div>
                                           </div>
                                       </div>
-
                                       <br>
-                                      <h5 class="mb-0">
-                                        &SmallCircle; Plotting Fit Performance Using RMSE Score and Percent Difference
-                                      </h5>
-
+                                        <h5 class="mb-0">
+                                          &SmallCircle; Plotting Fit Performance Using Accuracy Score and Percent Difference
+                                        </h5>
                                       <br>
-                                      <script src="https://gist.github.com/hyunguk-jee/17e710f9d8ee9d6f6d5ad993059a8344.js"></script>
-
+                                        <script src="https://gist.github.com/hyunguk-jee/d455dc98eab37445ce34e61bd44fc253.js"></script>
                                       <br>
                                       <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                        <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\plot_rmse.png" > </div>
+                                        <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\plot_accuracy_score.png" > </div>
                                       </div>
                                       <br>
 
                                       <p class="bk_pra wow move-up">
-                                      &emsp;The parameters I am iterating are the number of trees in the forest, and the
-                                       maximum depth of the tree. In this manual search, I am comparing the Root Mean Square Error,
-                                       which is the standard deviation of the prediction errors between the training and the validation set.
-                                       The range of combinations of the least square percentage
-                                       difference between them will be used to fit the prediction model with the best estimator.
+                                      &emsp;In this manual search, I am comparing is the accruacy score of training data,
+                                       and the out-of-box sample data for validation. The accuracy score is the percent deviation between the predicted
+                                       target value and the actual target value. The accuracy score will help us determine better parameter combinations
+                                       to fit our final prediction model with the best estimator. In the graph above, we are looking for parameter combinations
+                                       that have the higher validation accuracy score and also have the smaller square root difference between
+                                       training score and the validation score.
                                       </p>
 
                                       <p class="bk_pra wow move-up">
                                        &emsp;Here are the range of parameters in the "goldilocks zone" of bias-variance plot for this study:
                                        <ul>
-                                        <li style="font-size:15px;" > N Estimators: 25 ~ 125 </li>
-                                        <li style="font-size:15px;"> Max Depth: 2 </li>
+                                        <li style="font-size:15px;" > Num. of Estimators: 200 ~ 300 </li>
+                                        <li style="font-size:15px;"> Maximum Num. of Depth: 150 ~ 175 </li>
+                                        <li style="font-size:15px;"> Minimum Num of Samples Split: 2 ~ 5 </li>
+                                        <li style="font-size:15px;" > Minimum Num of Samples Leaf: 2 ~ 5 </li>
                                        </ul>
                                       </p>
 
@@ -737,29 +901,19 @@
                                         3. Improve Model Further with GridSearch and Cross-Validation Methods
                                       </h3>
                                       <br>
-                                      <p class="bk_pra wow move-up">
-                                      &emsp; Before fitting the model with a set of parameters, I have fitted the narrowed-down range of
-                                      parameters that I have defined during the manual parameter search.
-                                      Once I was confident that I found the best parameters to fit, I splited
-                                      the training data using K-Folds method inside and outside of the gridsearch for
-                                      cross-validation. Next, I have fitted the best estimator to the random forest regressor model.
-                                      As a result, the predictions and the fit score of the model is defined by Mean Squared Error. In addition,
-                                      the features with the most impact to the prediction model is defined by the feature importance.
-                                      </p>
-                                      <br>
                                       <div class="bk-accordion-style--2" id="accordionExampl3">
                                           <div class="card">
-                                              <div class="card-header" id="heading8">
+                                              <div class="card-header" id="heading11">
                                                   <h5 class="mb-0">
-                                                      <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse8"
-                                                          aria-expanded="false" aria-controls="collapse8">
+                                                      <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse11"
+                                                          aria-expanded="false" aria-controls="collapse11">
                                                           Fit Our Model with Best Estimators
                                                       </a>
                                                   </h5>
                                               </div>
 
 
-                                              <div id="collapse8" class="collapse" aria-labelledby="collapse8" data-parent="#accordionExampl3">
+                                              <div id="collapse11" class="collapse" aria-labelledby="collapse11" data-parent="#accordionExampl3">
                                                   <div class="card-body">
                                                     <br>
                                                     <h5 class="mb-0">
@@ -780,16 +934,16 @@
                                         </div>
                                         <div class="bk-accordion-style--2" id="accordionExampl3">
                                             <div class="card">
-                                                <div class="card-header" id="heading9">
+                                                <div class="card-header" id="heading12">
                                                     <h5 class="mb-0">
-                                                        <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse9"
-                                                            aria-expanded="false" aria-controls="collapse9">
+                                                        <a href="#" class="acc-btn" data-toggle="collapse" data-target="#collapse12"
+                                                            aria-expanded="false" aria-controls="collapse12">
                                                             View DataFrame
                                                         </a>
                                                     </h5>
                                                 </div>
 
-                                                <div id="collapse9" class="collapse" aria-labelledby="collapse9" data-parent="#accordionExampl3">
+                                                <div id="collapse12" class="collapse" aria-labelledby="collapse12" data-parent="#accordionExampl3">
                                                     <div class="card-body">
 
                                                       <h5 class="mb-0">
@@ -797,7 +951,7 @@
                                                       </h5>
                                                       <br>
                                                       <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                        <div style='width:1250px;height:auto;'> <img src="img\blog\big-img\volcano\best_estimator.png" > </div>
+                                                        <div style='width:1250px;height:auto;'> <img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
                                                       </div>
                                                       <br>
                                                       <h5 class="mb-0">
@@ -805,7 +959,7 @@
                                                       </h5>
                                                       <br>
                                                       <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                                        <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\feat_importancedf.png" > </div>
+                                                        <div style='width:auto;height:auto;'><img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
                                                       </div>
                                                       <br>
                                                       <h5 class="mb-0">
@@ -813,13 +967,24 @@
                                                       </h5>
                                                       <br>
                                                       <div style='overflow-x:scroll;overflow-y:hidden;width:auto;height:auto;'>
-                                                        <div style='width:1800px;height:auto;'><img src="img\blog\big-img\volcano\predictiondf.png" > </div>
+                                                        <div style='width:1800px;height:auto;'><img src="img\blog\big-img\disaster-tweets\place_holder.jpg" > </div>
                                                       </div>
 
                                                     </div>
                                                </div>
                                             </div>
                                         </div>
+                                        <br>
+                                        <p class="bk_pra wow move-up">
+                                        &emsp; Before fitting the model with any set of parameters, we optimized the parameter search
+                                        by performing a less aggressive manual gridsearch on a wide range of parameters. By doing so,
+                                        we have an idea of which range of parameters to focus on when we perform the actual fitting of our model.
+                                        Once I was confident that I found the best parameters to fit, I splited
+                                        the training data using K-Folds method inside and outside of the gridsearch for
+                                        cross-validation. Next, I have fitted the best estimator to the random forest regressor model.
+                                        As a result, the predictions and the fit score of the model is defined by Mean Squared Error. In addition,
+                                        the features with the most impact to the prediction model is defined by the feature importance.
+                                        </p>
                                         <br>
                                         <h5 class="mb-0">
                                           &SmallCircle; Plotting Our Random Forest Regressor Model Fitted with Best Estimator On A Tree Diagram
@@ -831,8 +996,8 @@
                                         Random Forest Regressor Model Diagram
                                         </h5>
                                         <br>
-                                        <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\plot_tree.png" > </div>
+                                        <div style='overflow-x:scroll;overflow-y:scroll;width:auto;height:auto;'>
+                                          <div style='width:1874px;height:auto;'><img src="img\blog\big-img\disaster-tweets\plot_tree10.png" > </div>
                                         </div>
                                         <br>
                                         <h5 class="mb-0">
@@ -846,7 +1011,7 @@
                                         </h5>
                                         <br>
                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\feat_importance.png" > </div>
+                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\place_holder.png" > </div>
                                         </div>
 
                                         <br>
@@ -874,7 +1039,7 @@
                                         </h5>
                                         <br>
                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\train_lineplot.png" > </div>
+                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\place_holder.png" > </div>
                                         </div>
                                         <br>
                                         <h5 class="mb-0"  align="center">
@@ -882,7 +1047,7 @@
                                         </h5>
                                         <br>
                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\test_lineplot.png" > </div>
+                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\place_holder.png" > </div>
                                         </div>
 
                                         <br>
@@ -908,7 +1073,7 @@
                                         </h5>
                                         <br>
                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\train_hist.png" > </div>
+                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\place_holder.png" > </div>
                                         </div>
                                         <br>
                                         <h5 class="mb-0"  align="center">
@@ -916,7 +1081,7 @@
                                         </h5>
                                         <br>
                                         <div style='overflow-x:hidden;overflow-y:hidden;width:auto;height:auto;'>
-                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\test_hist.png" > </div>
+                                          <div style='width:auto;height:auto;'><img src="img\blog\big-img\volcano\place_holder.png" > </div>
                                         </div>
                                         <br>
                                         <p class="bk_pra wow move-up">
