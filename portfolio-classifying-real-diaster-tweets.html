@@ -161,8 +161,8 @@
                         <div class="breadcaump-inner text-center">
                             <div class="breadcrumb-insite">
                                 <div class="header mb--40 text-center">
-                                    <h3 class="heading heading-h3 font-32 text-white"> Natural Language Processing with Disaster Tweets </h3>
-                                    <p style="font-size:150%;color:white">  Predict which Tweets are about real disasters and which ones are not </p>
+                                    <h3 class="heading heading-h3 font-32 text-white"> Classifying Real Disaster Tweets </h3>
+                                    <p style="font-size:150%;color:white">  Using Random Forest Classifer with Natural Language Processing </p>
                                     <div class="post-meta mt--20 text-white bk-hover align-items-center d-flex justify-content-center">
                                         <div class="post-date"> February 5 ,2021 </div>
                                         <div class="post-category"><a href="#">Portfolio</a></div>
@@ -285,10 +285,10 @@
                                               &emsp;Twitter gains alot of mentum on their platform because they promote human interaction and connectivity that is
                                               publically available for anyone can share their minds in various types of media. The social media is hyper-efficent outlet to share
                                               information between humans, in ways humans can understand each other, but it is a challange for machine to interprate for those who are
-                                              interested in monitoring and assessing a particular situation. With the datset that was provided by the host of this competition, I will be
-                                              attempting to classify disaster tweets from those that are not using a machine learning technique known as natural language processing. The information
-                                              provided is not specific to a particular diaster, timeframe or location. I will not be incorporating any other information other than what was provided,
-                                              which is strictly tweets in text format.
+                                              interested in monitoring and assessing a particular situation. With the datset that was provided by the host of this competition, We will
+                                              attempt to extract features that make up a disaster tweet from those that are not using a machine learning technique known as natural language processing.
+                                              The information provided is not specific to a particular diaster, timeframe or location. Also, we will not be incorporating any other information other than
+                                              what was provided, which is strictly tweets in text format.
                                             </p>
                                           <br>
                                             <h5 class="heading heading-h5 line-height-1-95 wow move-up">
@@ -339,10 +339,9 @@
                                              </h5>
                                              <p class="bk_pra wow move-up">
                                                &emsp; Our exploration ends with an understanding how to break down a text data such as a Twitter feed. This break down has three major parts. These parts include different types of Twitter features, several components of a
-                                               sentence construction, and the distinct measure of readability for every tweet in the dataset. Furthermore, we have trained our classification model
-                                               using the information gathered from every part of the break down. With this trained model, we are able to successfully classify each feed into two
-                                               distinct categories of whether it is regarding a real disaster or not with an 80% accuracy. To demonstrate our achievement, we generated randomly
-                                               assembled tweets from a lexicon for each classification to see how a machine would tweet during a real disaster.
+                                               sentence construction, and the distinct measure of readability for every tweet in the dataset. Furthermore, we are going to train our classification model
+                                               using the information gathered from every part of the break down. With this trained model, we will able to successfully classify each Twitter feed into two
+                                               distinct categories of whether it is regarding a real disaster or not with an 80% accuracy. Lastly, we will generate randomly assembled tweets from a lexicon for each classification to demonstrate our achievement.
                                             </p>
 
                                         </div>
@@ -620,7 +619,7 @@
                                               using a relevent keyword or phrase to be easily searched known as hashtag or hash sign followed by a keyword
                                                (# keyword), and an option to add geographical information metadata known as geotagging or location tagging.
                                                In addition to these building blocks, users can take advantage of various forms of media such as a hyperlink, photos,
-                                                and videos. For this study, however, we are only going to work with elements with texts. As shown above, I have broken
+                                                and videos. For this study, however, we are only going to work with elements with texts. The above demonstrates the break
                                                  down each tweets into its different anatomical elements.
                                           </p>
                                           <br>
@@ -777,7 +776,7 @@
                                          the call for attention to, or from a user or group of users by utilizing mention and hashtag, and the media that are being shared. For this study,
                                          these can be categorized as words, hashtags and mentions in each tweets used in both of our target values. As shown above, we can organize the frequency
                                          of each component of tweets in three parts: 1. the frequency of a particular word or phrase in all of the tweets; 2. the frequency of those in the category of real
-                                         disaster tweets; 3. the frequency of those that are non-urgent matter. With this information, we can study the frequency difference of those that are observed
+                                         disaster tweets; 3. the frequency of those that are non-urgent matter. With this information, we are able to study the frequency difference of those that are observed
                                          in both target categories to calculate the confidence in percentage of a particular tweet to be categorized as our target value. For example, the word 'fire'
                                           comes up 357 times in our training data. 75% of the time the word was tweeted was during an actual emergency situation. On the other hand, the frequency of
                                           the word 'like' is 394 times. Only 25% of the time the word was tweeted was not during a dire situation. We can also explore this idea further down with the frequency of
@@ -933,9 +932,7 @@
                                       Linsear Write readability score and syllable counts, the number of text and the number of text characters in a sentnece. However, this is the only
                                       significant observation of correlation between a readability score and text metada. This can be noted due to a variety of unique requirements for each
                                       readability score that cannot be captured when a text is dissasembled by components. Overall, the observed correlations between our defined features
-                                      have weak linear correlations. However, this gives us a general sense that the frequency and the meaning of keywords will play a bigger role in classifying
-                                       our prediction model, more so than any of the breakdowns of Twitter features, text metadata, or the readability scores. But, that is not to say that the
-                                        breakdowns will not be contributing with the classification of target or non-target values.
+                                      have weak linear correlations.
                                       </p>
                                       <br>
                                       <h3 class="heading heading-h5 line-height-1-95 wow move-up">
@@ -973,13 +970,15 @@
                                       <br>
                                         <script src="https://gist.github.com/hyunguk-jee/08ad9ff4bf352c680a594c6dc9d63358.js"></script>
                                       <p class="bk_pra wow move-up">
-                                         &emsp;The model I am going to use for this prediction model is Random Forest Regressor from Scikit-Learn.
-                                         A random forest algorithm's varsatility is very impressive and handles bias and variance very well. However,
-                                         I have to be very careful not to overfit the training data, which happens quite often. So, my solution is
-                                         to perform a very broad range of parameters that vary the predictive accuracy the most to get an idea where the
-                                         model underfits and overfits. That way, I only have small and desirable of range of parameters to calculate the
-                                         cross-validation scores, and fit the best estimator.
+                                         &emsp; The model we are fitting for this prediction model is Random Forest Classifer from Scikit-Learn.
+                                         The varsatility of an ensemble of forest algorithm is very impressive and handles bias and variance very well. However,
+                                         we have to be very careful not to overfit the training data, which happens quite often. So, my proposed solution is to
+                                         perform a very broad range of each parameter to see the effect on the predictive accuracy, and determine which combination of
+                                         parameters result in underfitting or overfitting prediction model. Later, we can narrow down our combinations of parameters to a set of select few
+                                         depending on the performance of our initial fitting. Finally, we will be using this smaller set of parameters to fit a more aggressive fitting
+                                         to find the best estimator.
                                        </p>
+                                       <br>
                                        <br>
 
                                       <h5 class="mb-0">
@@ -1020,7 +1019,7 @@
                                       <br>
 
                                       <p class="bk_pra wow move-up">
-                                      &emsp;In this manual search, I am comparing is the accruacy score of training data,
+                                      &emsp; In this manual search, we are comparing the accruacy score of training data,
                                        and the out-of-box sample data for validation. The accuracy score is the percent deviation between the predicted
                                        target value and the actual target value. The accuracy score will help us determine better parameter combinations
                                        to fit our final prediction model with the best estimator. In the graph above, we are looking for parameter combinations
@@ -1116,18 +1115,14 @@
                                         </div>
                                         <br>
                                         <p class="bk_pra wow move-up">
-                                        &emsp; Before fitting the model with any set of parameters, we optimized the parameter search
-                                        by performing a less aggressive manual gridsearch on a wide range of parameters. By doing so,
-                                        we have an idea of which range of parameters to focus on when we perform the actual fitting of our model.
-                                        Once I was confident that I found the best parameters to fit, I splited
-                                        the training data using K-Folds method inside and outside of the gridsearch for
-                                        cross-validation. Next, I have fitted the best estimator to the random forest regressor model.
-                                        As a result, the predictions and the fit score of the model is defined by Mean Squared Error. In addition,
-                                        the features with the most impact to the prediction model is defined by the feature importance.
+                                        &emsp; Before fitting the model with a set of parameters, we now have a narrowed down set of parameter combinations from our initial
+                                        parameter tuning. Furthermore, we will tune our prediction model with a more aggressive to find the best parameter
+                                        to fit. We will be spliting our training data with shuffle split method inside and outside of the gridsearch for cross-validation. Next,
+                                        we will fit the best estimator of our random forest regressor model. Lastly, we score our fit and the prediction values with accuracy score.
                                         </p>
                                         <br>
                                         <h5 class="mb-0">
-                                          &SmallCircle; Plotting Our Random Forest Regressor Model Fitted with Best Estimator On A Tree Diagram
+                                          &SmallCircle; Plotting Our Random Forest Classifer Model Fitted with Best Estimator On A Tree Diagram
                                         </h5>
                                         <br>
                                           <script src="https://gist.github.com/hyunguk-jee/8df9be92041282ae516ae853b83d0300.js"></script>
@@ -1397,9 +1392,9 @@
                                     &emsp; Finally, with everything that we learned about the training dataset, we can now apply our
                                     classification model to our unseen test dataset to classify whether each tweet in its dataset is
                                     regarding a real disaster situation or not. Next, we will gather all the words from every tweet, and
-                                    separate them into two different bag of words by our prediction classifications. We now that we have a lexicon for
-                                    each classification, we can try to recreate our own tweets with some of the vocabularies used to estimate how our
-                                    classification model performed. To randomly generate our sample tweets, we are going to be using a Markov Chain algorithm.
+                                    separate them into two different bag of words by our prediction classifications. Lastly, we can recreate
+                                    our own tweets with a lexicon from each classification using a Markov Chain algorithm. This will help us
+                                    estimate the performance and our understanding of our results from the classification model.
                                     </p>
 
 
@@ -1446,14 +1441,14 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="modern-pagination text-center">
-                            <a href="#">
+                            <a href="portfolio-predicting-house-prices.html">
                                 <p class="bk_pra body-color"> Next </p>
                                 <div class="title mt--25 mb--40">
-                                    <h4 class="heading heading-h4 text-white"> Next Project </h4>
+                                    <h4 class="heading heading-h4 text-white"> Predicting House Sale Prices in Ames, Iowa </h4>
                                 </div>
-                                <p> Upcoming Projects </p>
+                                <p> Performing Gradient Boosting Regression with Quantitative and Qualitative Features </p>
                                 <span class="nav-icon fa fa-arrow-right"></span>
-                                <p> Work in Progress </p>
+                                <p> View Project </p>
                             </a>
                         </div>
                     </div>

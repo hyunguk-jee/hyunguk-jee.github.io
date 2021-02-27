@@ -330,16 +330,15 @@
                                           </h5>
 
                                           <p class="bk_pra wow move-up">
-                                            &emsp;After analyzing the data carefully, I was able to make predictions each segment of seismic
-                                            events on the test set that was provided with an error deviation of 32.95 hours until the time of
-                                             eruption. By using a Random Forest Regressor method, I was able to determine that the interaction
-                                             between three sensors' activities have the most infleunce on the imminent eruption event, as seen in the
-                                             diagram above. More Specifically, the sensor with the most significant changes in outputs as an eruption was
-                                             imminent was Sensor 5. Almost all of the sensors increased in noise levels as the event was getting closer in
-                                             time. However, Sensor 5 have stayed almost to the same level, up until the last 5 minutes to the event,
-                                             which we can explore with a time-series chart along with a series of histograms. By training our machine
-                                             learning model with provided test data, I was able to predict the next volcanic eruption about 3-4 days prior.
-                                             No further data was provided for our prediction model.
+                                            &emsp; After analyzing the data carefully, our study concludes with predictions of each seismic reading segments
+                                            in the provided test set with an error deviation of 32.95 hours until the time of eruption. By using a Random Forest
+                                            Regressor method, our model is able to determine the interaction between three sensors' activities have the most infleunce
+                                            on the imminent eruption event, as seen in the diagram above. More Specifically, the sensor with the most significant
+                                             changes in outputs as an eruption was imminent was Sensor 5. Almost all of the sensors increased in noise levels as
+                                             the event was getting closer in time. However, Sensor 5 have stayed almost to the same level, up until the last 5
+                                             minutes to the event, which we can explore with a time-series chart along with a series of histograms. By training our
+                                              machine learning model with the provided test data,  we can estimate that we can predict the next volcanic eruption
+                                               about 3-4 days prior.
                                           </p>
 
                                         </div>
@@ -534,15 +533,17 @@
                                           <div style='width:100%;height:auto;'> <img src="img\blog\big-img\volcano\sample_segment.png" > </div>
                                       </div>
                                       <br>
+                                      <br>
                                       <p class="bk_pra wow move-up">
                                         &emsp;To be more specific, each segment contains 10 minute long sequence of 600,001 sensor readings.
                                         The training data file includes 4,431 segments. The total sensor readings in the training file
                                         come out to be over 2.6 million sequences for each 10 sensors reading. Also, the test data file includes
                                         4,520 segments. The total sensor readings in the prediction file comes out to be over 2.7 million sequences for
-                                        each 10 sensors reading. Because of the shear size of the data, I decided to aggregate each segment into 7 statistical
-                                        descriptions per sensor to work with an overview of the distribution. These descriptions include the sum, minimum, mean,
+                                        each 10 sensors reading. Because of the shear size of the dataset, we can explore the aggregation of different statistical
+                                        descriptions of each segment per sensor to work with an overview of the distribution. These descriptions include the sum, minimum, mean,
                                         standard deviation, median, skewness, and kurtosis. Thus, the feature names of our machine learning model are the statistical descriptions
-                                        of each sensors. The target is the time to eruption measured in seconds. The result dataframe is callable by the functions defined above.
+                                        of each sensors. Also, this will reduce the size of our working dataset to improve its workability. The target is the time to eruption measured
+                                        in seconds. The result dataframe is callable by the functions defined above.
                                        </p>
 
                                       <br>
@@ -551,12 +552,13 @@
                                       </h3>
                                       <br>
                                       <p class="bk_pra wow move-up">
-                                      &emsp;The model I am going to use for this prediction model is Random Forest Regressor from Scikit-Learn.
-                                      A random forest algorithm's varsatility is very impressive and handles bias and variance very well. However,
-                                      I have to be very careful not to overfit the training data, which happens quite often. So, my solution is
-                                      to perform a very broad range of parameters that vary the predictive accuracy the most to get an idea where the
-                                      model underfits and overfits. That way, I only have small and desirable of range of parameters to calculate the
-                                      cross-validation scores, and fit the best estimator.
+                                        &emsp; The model we are fitting for this prediction model is Random Forest Regressor from Scikit-Learn.
+                                         The varsatility of an ensemble of forest algorithm is very impressive and handles bias and variance very well. However,
+                                         we have to be very careful not to overfit the training data, which happens quite often. So, my proposed solution is to
+                                         perform a very broad range of each parameter to see the effect on the predictive accuracy, and determine which combination of
+                                         parameters result in underfitting or overfitting prediction model. Later, we can narrow down our combinations of parameters to a set of select few
+                                         depending on the performance of our initial fitting. Finally, we will be using this smaller set of parameters to fit a more aggressive fitting
+                                         to find the best estimator.
                                       </p>
                                       <br>
                                             <div class="bk-accordion-style--2" id="accordionExampl3">
@@ -640,11 +642,9 @@
                                       <br>
 
                                       <p class="bk_pra wow move-up">
-                                      &emsp;The parameters I am iterating are the number of trees in the forest, and the
-                                       maximum depth of the tree. In this manual search, I am comparing the Root Mean Square Error,
-                                       which is the standard deviation of the prediction errors between the training and the validation set.
-                                       The range of combinations of the least square percentage
-                                       difference between them will be used to fit the prediction model with the best estimator.
+                                        &emsp; The combinations of parameters we are going to iterate are as follows: the number of estimators, and the number of depth.
+                                        In this initial parameter tuning, we are comparing the Root Mean Square Error, which is the standard deviation of the prediction errors between the training and the validation set.
+                                        The range of combinations of the least square percentage difference between them will be used to fit the prediction model with the best estimator.
                                       </p>
 
                                       <p class="bk_pra wow move-up">
@@ -660,15 +660,12 @@
                                         3. Improve Model Further with GridSearch and Cross-Validation Methods
                                       </h3>
                                       <br>
-                                      <p class="bk_pra wow move-up">
-                                      &emsp; Before fitting the model with a set of parameters, I have fitted the narrowed-down range of
-                                      parameters that I have defined during the manual parameter search.
-                                      Once I was confident that I found the best parameters to fit, I splited
-                                      the training data using K-Folds method inside and outside of the gridsearch for
-                                      cross-validation. Next, I have fitted the best estimator to the random forest regressor model.
-                                      As a result, the predictions and the fit score of the model is defined by Mean Squared Error. In addition,
-                                      the features with the most impact to the prediction model is defined by the feature importance.
-                                      </p>
+                                        <p class="bk_pra wow move-up">
+                                          &emsp; Before fitting the model with a set of parameters, we now have a narrowed down set of parameter combinations from our initial
+                                              parameter tuning. Furthermore, we will tune our prediction model with a more aggressive to find the best parameter
+                                              to fit. We will be spliting our training data with shuffle split method inside and outside of the gridsearch for cross-validation. Next,
+                                              we will fit the best estimator of our gradient boosting regressor model. Lastly, we score our fit and the prediction values with Root Mean Squared Error.
+                                        </p>
                                       <br>
                                       <div class="bk-accordion-style--2" id="accordionExampl3">
                                           <div class="card">
@@ -776,13 +773,9 @@
 
                                         <br>
                                         <p class="bk_pra wow move-up">
-                                        &emsp; The feature importance percentage tells us that the percentage of how much the
-                                        feature has the influence in our model to predict the test data. As stated in the
-                                        conclusion section, the most influential features of this model can be explained by the
-                                        feature importance of the model. Out of the 70 features, which is comprised of aggregation of
-                                        7 statistical description of 10 sensors, the most important feature of this model is the standard
-                                        deviation of Sensor 5. In this study, I found that our most influential feature takes account of 55% of
-                                        decisions to predict the test data. The next most influential features include the standard deviation of Sensor
+                                        &emsp; ;The feature importance percentage tells us that the percentage of how much the feature has the influence in our model to predict the test data.
+                                        Out of the 70 features, which is comprised of aggregation of 7 statistical description of 10 sensors, the most important feature of this model is the standard
+                                        deviation of Sensor 5. In this study, we conclude that our most influential feature takes account of 55% of decisions to predict the test data. The next most influential features include the standard deviation of Sensor
                                         2 with 21% of influence, and that of Sensor 3 with 18% of feature importance.
                                         </p>
 
@@ -812,8 +805,7 @@
 
                                         <br>
                                         <p class="bk_pra wow move-up">
-                                        &emsp; With this in mind, let's take a look at the time-series data of top
-                                        5 most influential sensors. We can observe that the most influential features actually
+                                        &emsp; The above image is the time-series graph of top 5 most influential sensors. We can observe that the most influential features actually
                                          do not have significant changes over time, which might have many confused. In fact, they seem to have the
                                          least amount of changes over time in this graph. Consequently, the feature with the most change over time is
                                          the minimum values of Sensor 3, which the least important feature out of these 5 features.
@@ -930,7 +922,7 @@
                                     <div class="title mt--25 mb--40">
                                         <h4 class="heading heading-h4 text-white"> Classifying Real Disaster Tweets </h4>
                                     </div>
-                                    <p> Exploring Natural Language Processing </p>
+                                    <p> Exploring Random Forest Classifer with Natural Language Processing </p>
                                     <span class="nav-icon fa fa-arrow-right"></span>
                                     <p> View Project </p>
                                 </a>
